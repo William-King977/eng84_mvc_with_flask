@@ -16,6 +16,9 @@ def welcome():
 
 # Create 2 more pages/routes and add the functionality for email and password
 # Implement OOP and inheritance
+@app.route("/buttons/")
+def buttons():
+    return render_template("buttons.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
